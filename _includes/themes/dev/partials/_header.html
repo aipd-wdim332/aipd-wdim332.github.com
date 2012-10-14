@@ -1,0 +1,13 @@
+<header>
+  <h1>
+    <a href="/">{{ site.title }}</a>
+  </h1>
+
+  <nav>
+    <ul>
+      {% assign pages_list = site.pages %}
+      {% assign group = 'navigation' %}
+      {% include JB/pages_list %}
+    </ul>
+  </nav>
+</header>
