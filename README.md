@@ -69,6 +69,9 @@ settings to help with new layouts and categorization.
 I've also created some default files in the /_layouts directory and
 /_includes/dev directory that will allow us to style up our posts correctly.
 A new page in the / folder that lists only profiles has also been added. 
+All of these changes have been made in the spirit of the dev theme and are
+sparse and ready for styling or improvement. 
+Consider this section to be iteration one; 0.0.1
 
 
 ## Guidelines
