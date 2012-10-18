@@ -66,6 +66,9 @@ Should be ignored for now.
     <code>rake profile name="John Smith"</code>
 This will generate a new post in the /_posts directory with some additional
 settings to help with new layouts and categorization.
+I've also created some default files in the /_layouts directory and
+/_includes/dev directory that will allow us to style up our posts correctly.
+A new page in the / folder that lists only profiles has also been added. 
 
 
 ## Guidelines
