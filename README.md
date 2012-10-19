@@ -60,6 +60,20 @@ necessary. See [this thread on SO](http://stackoverflow.com/questions/6619717/wh
 
 Should be ignored for now.
 
+
+### New Rake task for profile posts
+(I can relocate this documentation to a better place tomorrow Nate). I've created a number of new files and modifications related to creating profiles for our panel of speakers. First of which is a new rake task for auto-generating a .md file for profiles. This is used in the terminal with
+    <code>rake profile name="John Smith"</code>
+This will generate a new post in the /_posts directory with some additional
+settings to help with new layouts and categorization.
+I've also created some default files in the /_layouts directory and
+/_includes/dev directory that will allow us to style up our posts correctly.
+A new page in the / folder that lists only profiles has also been added. 
+All of these changes have been made in the spirit of the dev theme and are
+sparse and ready for styling or improvement. 
+Consider this section to be iteration one; 0.0.1
+
+
 ## Guidelines
 
 ### Git
