@@ -25,20 +25,4 @@
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
 </head>
-<body>
-
-<div class="container">
-
-  {% include themes/dev/partials/_header.html %}
-
-  <section class="content">
-    {{ content }}
-  </section>
-
-</div> <!--/.container-->
-
-{% include themes/dev/partials/_footer.html %}
-{% include themes/dev/partials/_scripts.html %}
-
-</body>
 </html>

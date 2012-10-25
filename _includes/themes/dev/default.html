@@ -26,63 +26,19 @@
   -->
 </head>
 <body>
-  <div id="container">
-    <section id="main">
-      <h1>NOV 15</h1>
-      <h2>AN OPEN DISCUSSION ON<br />
-        MANAGING INTERACTIVE TEAMS</h2>
-      <section id="form">
-        <div id="social">
-          <a href="#facebook"><img border="0" src="{{ ASSET_PATH }}/images/facebook.png" height="32" width="32" alt="Find us on Facebook" /></a>
-          <a href="Twitter"><img border="0" src="{{ ASSET_PATH }}/images/twitter.png" height="32" width="32" alt="Follow us on Twitter" /></a>
-        </div>
-        <form method="POST" action="/">
-          <input type="text" name="email" id="email" value="RSVP" /><input type="image" src="{{ ASSET_PATH }}/images/submit.png" id="submit" />
-        </form>
-        <div id="tip">
-          <span class="darkRed">Enter your email to</span> get involved
-        </div>
-      </section>
-      <section id="www">
-        <div class="outside">
-          <h3 id="where">WHERE</h3>
-          <article>Art Institute of Portland<br />
-            Room: Open Space</article>
-        </div>
-        <div id="middle">
-          <h3 id="when">WHEN</h3>
-          <article>November 15th, 8pm</article>
-        </div>
-        <div class="outside">
-          <h3 id="who">WHO</h3>
-          <article>Industry professionals from a variety of backgrounds</article>
-        </div>
-        <div class="clear"></div>
-      </section>
-      <section id="about">
-        <a href="http://goo.gl/maps/fYLNA" target="_blank"><img border="0" src="{{ ASSET_PATH }}/images/map-back.png" height="311" width="311" id="map" alt="" /></a>
-        <h4>About</h4>
-        <p>The Art Institute of Portland is hosting a panel discussion about best practices in interactive team management. Industry professionals from a variety of backgrounds will speak on topics including intra-team communications, project workflow strategies, managing client relationships, how to assemble and retain the ideal interactive team, and balancing budget vs. quality.</p>
-      </section>
-    </section>
-    <section id="panelists">
-      <img src="{{ ASSET_PATH }}/images/shadow.png" height="21" width="1020" alt="" />
-      <h4>PANELISTS</h4>
-      <article class="speaker">
-        <hgroup class="nameSite">
-          <h5>June Smith</h5>
-          <h6><a href="#" target="_blank">www.jsmith.com</a></h6>
-        </hgroup>
-        <hgroup class="contact">
-          <h6><a href="mailto:jsmith@yay.com">jsmith@yay.com</a></h6> | <h6><a href="#" target="_blank">@jsmith</a></h6>
-        </hgroup>
-        <article class="info">
-          <img border="0" src="{{ ASSET_PATH }}/images/map-back.png" height="311" width="311" id="speakerImg" alt="" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium, sem id malesuada feugiat, lorem sapien porttitor quam, at ullamcorper turpis libero eget arcu. Fusce in nisi facilisis ipsum sodales laoreet vitae et odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis et libero sit amet erat scelerisque tincidunt vel eu mauris. Nunc tincidunt feugiat ornare. Pellentesque scelerisque lectus ac purus ultrices porta. Praesent sit amet felis vitae massa placerat aliquet eu nec lorem. Sed porta lobortis ante nec viverra. Vestibulum ac nulla augue, egestas porta nibh. Integer vel orci nec dolor pretium luctus sed.</p>
-        </article>
-      </article>
-    </section>
-  </div>
-  {% include themes/dev/partials/_scripts.html %}
+
+<div id="container">
+
+  {% include themes/dev/partials/_precon.html %}
+
+  <section class="content">
+    {{ content }}
+  </section>
+
+</div> <!--/.container-->
+
+{% include themes/dev/partials/_footer.html %}
+{% include themes/dev/partials/_scripts.html %}
+
 </body>
 </html>
