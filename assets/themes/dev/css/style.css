@@ -1,6 +1,6 @@
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;}caption, th, td {text-align:left;font-weight:normal;}table {border-collapse:separate;border-spacing:0;}blockquote:before,blockquote:after,q:before,q:after {content: "";}blockquote, q {quotes: "" "";}
 
-/* first for IE 4â€“8 */
+/* first for IE 4–8 */
 @font-face {
 	font-family: TisaWebPro;
 	src: url("../fonts/TisaWebPro.eot");
@@ -20,7 +20,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 @font-face {
 	font-family: TisaScWebPro;
 	src: url("../fonts/TisaScWebPro.woff") format("woff");
-}		
+}
 
 body {
 	font-size: 19px;
@@ -30,18 +30,22 @@ body {
 	text-shadow: 1px 1px 1px #3e3b3b;
 }
 
-#container {
-	width: 1020px;
-	margin: 0 auto;
-	-webkit-box-shadow:  0 0 15px -3px #000;
-	-moz-box-shadow:  0 0 15px -3px #000;
-	box-shadow:  0 0 15px -3px #000;
-}
+#container {}
 
 #main {
+	background: url(../images/topBack.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+		 -moz-background-size: cover;
+			 -o-background-size: cover;
+	   	    background-size: cover;
 	height: 946px;
 	padding-top: 132px;
-	background: url(../images/topBack.jpg) top left no-repeat;
+}
+
+#main .content,
+#panelists .content {
+	width: 1020px;
+	margin: 0 auto;
 }
 
 #form {
@@ -174,7 +178,9 @@ body {
 #panelists {
 	background: url('../images/panBack.jpg') top left;
 	height: 607px;
+	margin: 0 auto;
 	text-shadow: none !important;
+	width: 1020px;
 }
 
 #panelists h4 {

@@ -20,7 +20,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 @font-face {
 	font-family: TisaScWebPro;
 	src: url("../fonts/TisaScWebPro.woff") format("woff");
-}		
+}
 
 body {
 	font-size: 19px;
@@ -30,16 +30,11 @@ body {
 	text-shadow: 1px 1px 1px #3e3b3b;
 }
 
-#container {
-	width: 1020px;
-	margin: 0 auto;
-	-webkit-box-shadow:  0 0 15px -3px #000;
-	-moz-box-shadow:  0 0 15px -3px #000;
-	box-shadow:  0 0 15px -3px #000;
-}
+#container {}
 
 #main {
-	height: 946px;
+	width: 1020px;
+	margin: 0 auto;
 	padding-top: 132px;
 	background: url(../images/topBack.jpg) top left no-repeat;
 }
@@ -175,6 +170,8 @@ body {
 	background: url('../images/panBack.jpg') top left;
 	height: 607px;
 	text-shadow: none !important;
+	margin: 0 auto;
+	width: 1020px;
 }
 
 #panelists h4 {

@@ -1,6 +1,6 @@
 ---
 layout: profile
-title: "Example Profile"
+title: "Example Profile 2"
 description: ""
 category: profile
 tags: []
@@ -8,7 +8,7 @@ tags: []
 
 <article class="speaker">
   <hgroup class="nameSite">
-    <h5>Example Profile 1</h5>
+    <h5>Example Profile 2</h5>
     <h6><a href="#" target="_blank">www.jsmith.com</a></h6>
   </hgroup>
   <hgroup class="contact">
