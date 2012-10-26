@@ -108,7 +108,7 @@ body {
 	font-size: 18px;
 	height: 36px;
 	line-height: 36px;
-	margin-left: 80px;
+	margin-left: 45px;
 	margin-right: 1px;
 	text-indent: 13px;
 	text-shadow: 1px 1px 1px #3e3b3b;
@@ -296,4 +296,10 @@ footer p {
   line-height: 100%;
   margin: 0;
   padding: 10px 0;
+}
+
+/**** social buttons ****/
+#socialButtons {
+  margin-top: 25px; 
+  margin-left: 370px; 
 }

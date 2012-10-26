@@ -40,6 +40,11 @@ tagline: optional tagline
       </div>
       <div class="clear"></div>
     </section>
+      <div id="socialButtons">
+        <div class="fb-like" data-href="http://www.pdxinteractive.com" data-send="false" data-width="100" data-show-faces="false" data-colorscheme="dark" data-font="arial">something</div>
+      <a href="https://pdxinteractive.com" class="twitter-share-button" data-lang="en">Tweet</a>
+      </div>
+      <div class="clear"></div>
     <section id="about">
       <a href="http://goo.gl/maps/fYLNA" target="_blank"><img border="0" src="{{ ASSET_PATH }}dev/images/map_test.png" height="311" width="311" id="map" alt="" /></a>
       <h4>About</h4>
@@ -50,10 +55,11 @@ tagline: optional tagline
   </div>
 </section>
 
+<!--
 <section id="panelists">
   <div class="shadow">&nbsp;</div>
   <div class="content">
-<!--     <img src="{{ ASSET_PATH }}dev/images/shadow.png" height="21" width="1020" alt="" /> -->
+    <img src="{{ ASSET_PATH }}dev/images/shadow.png" height="21" width="1020" alt="" />
     <h4>PANELISTS</h4>
     {% for post in site.categories.profile %}
       {{ post.content }}
@@ -61,3 +67,4 @@ tagline: optional tagline
     <br class="clear">
   </div>
 </section>
+-->
