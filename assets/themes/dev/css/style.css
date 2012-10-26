@@ -185,10 +185,10 @@ body {
 }
 
 #www h3#who {
-	background: url(../images/who.png) top left no-repeat;
-	height: 47px;
+	background: url(../images/what.png) top left no-repeat;
+	height: 45px;
   margin-bottom: 15px;
-	width: 66px;
+	width: 84px;
 	text-indent: -9999px;
 }
 
