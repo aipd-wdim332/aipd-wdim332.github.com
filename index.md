@@ -42,7 +42,7 @@ tagline: optional tagline
     </section>
       <div id="socialButtons">
         <a href="https://pdxinteractive.com" class="twitter-share-button" data-lang="en">&nbsp;</a>
-        <div class="fb-like" data-href="http://www.pdxinteractive.com" data-send="false" data-width="225" data-show-faces="false" data-font="arial">&nbsp;</div>
+        <div class="fb-like" data-href="http://www.pdxinteractive.com" data-layout="button_count" data-send="false" data-width="225" data-show-faces="false" data-font="arial">&nbsp;</div>
       </div>
       <div class="clear"></div>
     <section id="about">
