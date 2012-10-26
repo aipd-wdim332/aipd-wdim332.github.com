@@ -313,3 +313,13 @@ footer p {
   margin-top: 25px;
   margin-left: 370px;
 }
+
+#socialButtons:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#socialButtons iframe, #socialButtons div {
+  float: left;
+}
