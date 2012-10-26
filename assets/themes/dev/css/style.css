@@ -22,57 +22,86 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	src: url("../fonts/TisaScWebPro.woff") format("woff");
 }
 
+/* ---------- Removes focus outline in web-kit browsers ---------- */
+*:focus { outline: 0; }
+
+/* ---------- Globals ----------- */
+h1 {
+	width: 253px;
+	height: 111px;
+	background: url(../images/nov-15.png) top left no-repeat;
+	margin: 0 auto 15px;
+	text-indent: -9999px;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 47px;
+	text-align: center;
+}
+
+p { line-height: 150%; }
+
+p, ul, ol { margin-bottom: 15px; }
+
+ul, ol { list-style-position: inside; }
+
+strong, b { font-weight:bold; }
+
+i, em { font-style:italic; }
+
+.clear { clear: both; }
+
+.darkRed { color: #592519; }
+
 body {
-	font-size: 19px;
 	color: #fbfcfc;
+  font-family: 'TisaWebPro', serif;
+	font-size: 19px;
 	line-height: 24px;
-	font-family: 'TisaWebPro', serif;
 	text-shadow: 1px 1px 1px #3e3b3b;
 }
 
-#container {}
-
 #main {
-	background: url(../images/topBack.jpg) no-repeat center top;
+	background: url(../images/background.jpg) no-repeat center top;
 	-webkit-background-size: cover;
 		 -moz-background-size: cover;
 			 -o-background-size: cover;
 	   	    background-size: cover;
 	height: 946px;
+	min-width: 1020px;
 	padding-top: 132px;
 }
 
+/* ---------- Content Container ---------- */
 #main .content,
 #panelists .content {
-	width: 1020px;
 	margin: 0 auto;
+	width: 1020px;
 }
 
-#form {
+/* ---------- RSVP Form ---------- */
+.rsvp-form {
 	height: 65px;
 	margin: 40px auto 0;
 	width: 345px;
 }
 
-#form a:hover {
-	opacity: 0.75;
-}
+.social a:hover { opacity: 0.75; }
 
-#form #social {
-	width: 68px;
+.rsvp-form .social {
 	height: 32px;
+	width: 68px;
 	padding-top: 4px;
 	position: absolute;
 }
 
-#form form {
-	display: inline-block;
-}
+.rsvp-form form { display: inline-block; }
 
-#form #email {
+.rsvp-form input#email {
 	background: url("../images/input.png") no-repeat scroll left top transparent;
 	border: medium none;
-	color: #FFFFFF;
+	color: #fff;
 	display: inline-block;
 	float: left;
 	font-size: 18px;
@@ -81,93 +110,95 @@ body {
 	margin-left: 80px;
 	margin-right: 1px;
 	text-indent: 13px;
-	text-shadow: 1px 1px 1px #3E3B3B;
+	text-shadow: 1px 1px 1px #3e3b3b;
 	width: 212px;
 }
 
-#form #submit {
+.rsvp-form input#submit {
+  background: url(../images/submit.png) no-repeat 0 0;
+  border: 0;
 	display: inline-block;
+  height: 36px;
+	text-indent: -9999px;
+	width: 38px;
 }
 
-#form #tip {
+.rsvp-form .tip {
 	clear: both;
 	font-size: 15px;
 	font-style: italic;
-	padding-right: 32px;
-	text-align: right;
+	padding: 0 0 0 20px;
+	text-align: center;
 	text-shadow: none !important;
 }
 
+/* ----------- Where, When & Who ---------- */
 #www {
-	border-top: 1px solid #D3A795;
-	border-left: 1px solid #D3A795;
-	border-right: 1px solid #D3A795;
+	border: 1px solid #D3A795;
+	border-bottom: 0;
 	margin: 50px auto 0;
-	min-height: 157px;
+/* 	min-height: 157px; */
 	width: 820px;
 }
 
 #www .outside {
-	width: 239px;
+  float: left;
 	height: 117px;
 	padding: 20px;
-	float: left;
+  width: 239px;
 }
 
 #www #middle {
-	width: 220px;
-	height: 117px;
-	padding: 20px;
-	float: left;
 	border-left: 1px solid #D3A795;
 	border-right: 1px solid #D3A795;
+  float: left;
+	height: 117px;
+	padding: 20px;
+  width: 220px;
 }
 
 #www h3#where {
-	width: 101px;
+  background: url(../images/where.png) top left no-repeat;
 	height: 45px;
-	background: url(../images/where.png) top left no-repeat;
+  margin-bottom: 15px;
 	text-indent: -9999px;
-	margin-bottom: 15px;
+  width: 101px;
 }
 
 #www h3#when {
-	width: 84px;
-	height: 45px;
 	background: url(../images/when.png) top left no-repeat;
-	text-indent: -9999px;
+	height: 45px;
 	margin-bottom: 15px;
+  text-indent: -9999px;
+  width: 84px;
 }
 
 #www h3#who {
-	width: 66px;
-	height: 47px;
 	background: url(../images/who.png) top left no-repeat;
+	height: 47px;
+  margin-bottom: 15px;
+	width: 66px;
 	text-indent: -9999px;
-	margin-bottom: 15px;
 }
 
 #www article {
-	font-style: italic;
 	font-size: 17px;
+	font-style: italic;
 }
 
+/* ----------- About ----------- */
 #about {
 	margin: 60px auto 0;
-	min-height: 300px;
+/* 	min-height: 300px; */
 	width: 820px;
 }
 
 #about h4 {
-	width: 264px;
-	height: 61px;
 	background: url('../images/about.png') top left no-repeat;
-	text-indent: -9999px;
-	margin-bottom: 15px;
-}
-
-#about p {
-	line-height: 30px;
+  height: 61px;
+  margin-bottom: 15px;
+  text-indent: -9999px;
+	width: 264px;
 }
 
 #map {
@@ -175,12 +206,26 @@ body {
 	margin-left: 15px;
 }
 
+/* ---------- Shadow ----------*/
+.shadow {
+  background: url(../images/shadow.png) 0 0 repeat-x;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* ---------- Panelists Profiles ----------- */
 #panelists {
-	background: url('../images/panBack.jpg') top left;
-	height: 607px;
+	background: url('../images/footer_pannel.jpg') 0 0;
+/*
+	-webkit-background-size: cover;
+		 -moz-background-size: cover;
+			 -o-background-size: cover;
+	   	    background-size: cover;
+*/
 	margin: 0 auto;
 	text-shadow: none !important;
-	width: 1020px;
 }
 
 #panelists h4 {
@@ -192,13 +237,10 @@ body {
 	width: 265px;
 }
 
-.speaker {
-	padding: 50px 100px;
-}
+.speaker { padding: 50px 100px; }
 
-.speaker h5, .speaker h6 {
-	display: inline-block;
-}
+.speaker h5, 
+.speaker h6 { display: inline-block; }
 
 .speaker h5 {
 	font-family: 'TisaWebPro',serif;
@@ -226,9 +268,7 @@ body {
 	text-decoration: none;
 }
 
-.speaker h6 a:hover {
-	color: #85e4ef;
-}
+.speaker h6 a:hover { color: #85e4ef; }
 
 .speaker #speakerImg {
 	float: left;
@@ -238,44 +278,21 @@ body {
 
 .speaker .info {
 	font-size: 16px;
-	line-height: 25px;
 	padding-top: 15px;
 }
 
-h1 {
-	width: 253px;
-	height: 111px;
-	background: url(../images/nov-15.png) top left no-repeat;
-	margin: 0 auto 15px;
-	text-indent: -9999px;
+/* ------------ Footer ----------- */
+footer {
+  background: #000;
+  clear: both;
+  padding: 0;
+  text-align: center;
+  width: 100%;
 }
 
-h2 {
-	font-size: 40px;
-	line-height: 47px;
-	text-align: center;
-}
-
-p, ul, ol {
-	margin-bottom:15px;
-}
-
-ul, ol {
-	list-style-position:inside;
-}
-
-strong, b {
-	font-weight:bold;
-}
-
-i, em {
-	font-style:italic;
-}
-
-.clear {
-	clear: both;
-}
-
-.darkRed {
-	color: #592519;
+footer p {
+  font-size: 12px;
+  line-height: 100%;
+  margin: 0;
+  padding: 10px 0;
 }
