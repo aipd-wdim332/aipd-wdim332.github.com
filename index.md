@@ -1,13 +1,13 @@
 ---
 layout: default
-title: PDXinter@ctive | An Open Discussion
+title: PDX Interactive | An Open Discussion
 tagline: optional tagline
 ---
 {% include JB/setup %}
 
 <section id="main">
   <div class="content">
-    <h1>NOV 15</h1>
+    <h1>PDX Interactive</h1>
     <h2>AN OPEN DISCUSSION ON<br />
       MANAGING INTERACTIVE TEAMS</h2>
     <section class="rsvp-form">
@@ -31,7 +31,7 @@ tagline: optional tagline
       </div>
       <div id="middle">
         <h3 id="when">WHEN</h3>
-        <article>November 15th, 8pm</article>
+        <article>November 15th, 7pm</article>
       </div>
       <div class="outside">
         <h3 id="who">WHO</h3>
@@ -43,7 +43,7 @@ tagline: optional tagline
       <a href="http://goo.gl/maps/fYLNA" target="_blank"><img border="0" src="{{ ASSET_PATH }}dev/images/map.png" height="311" width="311" id="map" alt="" /></a>
       <h4>About</h4>
       <p>The Art Institute of Portland is hosting a panel discussion about best practices in interactive team management. Industry professionals from a variety of backgrounds will speak on topics including intra-team communications, project workflow strategies, managing client relationships, how to assemble and retain the ideal interactive team, and balancing budget vs. quality.</p>
-          <br class="clear">
+          <br class="clear"/>
     </section>
 
   </div>

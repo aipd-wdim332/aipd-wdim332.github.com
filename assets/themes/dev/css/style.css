@@ -25,11 +25,13 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 /* ---------- Removes focus outline in web-kit browsers ---------- */
 *:focus { outline: 0; }
 
+input::-webkit-input-placeholder { color: #fff; }
+
 /* ---------- Globals ----------- */
 h1 {
-	width: 253px;
-	height: 111px;
-	background: url(../images/nov-15.png) top left no-repeat;
+	width: 320px;
+	height: 191px;
+	background: url(../images/pdx_interactive_logo_trans.png) top left no-repeat;
 	margin: 0 auto 15px;
 	text-indent: -9999px;
 }
@@ -68,9 +70,8 @@ body {
 		 -moz-background-size: cover;
 			 -o-background-size: cover;
 	   	    background-size: cover;
-	height: 946px;
 	min-width: 1020px;
-	padding-top: 132px;
+	padding: 110px 0 50px 0;
 }
 
 /* ---------- Content Container ---------- */
