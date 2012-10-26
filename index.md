@@ -10,19 +10,19 @@ tagline: optional tagline
     <h1>PDX Interactive</h1>
     <h2>AN OPEN DISCUSSION ON<br />
       MANAGING INTERACTIVE TEAMS</h2>
-    <section class="rsvp-form">
-<!--
+    <!--section class="rsvp-form">
       <div class="social">
         <a href="#facebook"><img border="0" src="{{ ASSET_PATH }}dev/images/facebook.png" height="32" width="32" alt="Find us on Facebook" /></a>
         <a href="Twitter"><img border="0" src="{{ ASSET_PATH }}dev/images/twitter.png" height="32" width="32" alt="Follow us on Twitter" /></a>
       </div>
--->
+
       <form method="POST" action="/">
         <input type="text" name="email" id="email" placeholder="RSVP" />
         <input type="submit" name="submit" id="submit" />
       </form>
+
       <div class="tip">Enter your email to join the conversation</div>
-    </section>
+    </section-->
     <section id="www">
       <div class="outside">
         <h3 id="who">WHAT</h3>
@@ -41,8 +41,8 @@ tagline: optional tagline
       <div class="clear"></div>
     </section>
       <div id="socialButtons">
-        <div class="fb-like" data-href="http://www.pdxinteractive.com" data-send="false" data-width="100" data-show-faces="false" data-colorscheme="dark" data-font="arial">something</div>
-      <a href="https://pdxinteractive.com" class="twitter-share-button" data-lang="en">Tweet</a>
+        <div class="fb-like" data-href="http://www.pdxinteractive.com" data-send="false" data-width="100" data-show-faces="false" data-font="arial">&nbsp;</div>
+      <a href="https://pdxinteractive.com" class="twitter-share-button" data-lang="en">&nbsp;</a>
       </div>
       <div class="clear"></div>
     <section id="about">

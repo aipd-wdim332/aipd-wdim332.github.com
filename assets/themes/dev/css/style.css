@@ -28,6 +28,16 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 input::-webkit-input-placeholder { color: #fff; }
 
 /* ---------- Globals ----------- */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
 	width: 320px;
 	height: 191px;
@@ -240,7 +250,7 @@ body {
 
 .speaker { padding: 50px 100px; }
 
-.speaker h5, 
+.speaker h5,
 .speaker h6 { display: inline-block; }
 
 .speaker h5 {
@@ -286,7 +296,7 @@ body {
 footer {
   background: #000;
   clear: both;
-  padding: 0;
+  padding: 24px 0;
   text-align: center;
   width: 100%;
 }
@@ -300,6 +310,6 @@ footer p {
 
 /**** social buttons ****/
 #socialButtons {
-  margin-top: 25px; 
-  margin-left: 370px; 
+  margin-top: 25px;
+  margin-left: 370px;
 }
