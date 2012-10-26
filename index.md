@@ -40,7 +40,7 @@ tagline: optional tagline
       <div class="clear"></div>
     </section>
     <section id="about">
-      <a href="http://goo.gl/maps/fYLNA" target="_blank"><img border="0" src="{{ ASSET_PATH }}dev/images/map.png" height="311" width="311" id="map" alt="" /></a>
+      <a href="http://goo.gl/maps/fYLNA" target="_blank"><img border="0" src="{{ ASSET_PATH }}dev/images/map_test.png" height="311" width="311" id="map" alt="" /></a>
       <h4>About</h4>
       <p>The Art Institute of Portland is hosting a panel discussion about best practices in interactive team management. Industry professionals from a variety of backgrounds will speak on topics including intra-team communications, project workflow strategies, managing client relationships, how to assemble and retain the ideal interactive team, and balancing budget vs. quality.</p>
           <br class="clear"/>
