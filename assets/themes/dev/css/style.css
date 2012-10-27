@@ -24,7 +24,8 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 
 /* helpers */
 
-.cf:after {
+/* clearfix: http://css-tricks.com/snippets/css/clear-fix */
+.group:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -75,12 +76,12 @@ a {
 
 /* header */
 
-header h1.logo {
-	width: 320px;
+header #logo {
+	background: url(../images/pdx_interactive_logo_trans.png) left top no-repeat;
 	height: 191px;
-	background: url(../images/pdx_interactive_logo_trans.png) top left no-repeat;
 	margin: 0 auto 15px;
 	text-indent: -9999px;
+	width: 320px;
 }
 
 header h2 {
@@ -136,9 +137,9 @@ header h2 {
 	text-shadow: none !important;
 }
 
-/* ----------- Where, When & Who ---------- */
+/* event info */
 
-.info {
+#info {
 	border: 1px solid #D3A795;
 	border-bottom: 0;
 	margin: 30px auto 0;
@@ -146,20 +147,20 @@ header h2 {
 	width: 820px;
 }
 
-.info .box {
+#info .box {
 	float: left;
 	height: 130px;
 	padding: 20px;
 	width: 239px;
 }
 
-.info .box.middle {
+#info .box.middle {
 	border-left: 1px solid #D3A795;
 	border-right: 1px solid #D3A795;
 	width: 220px;
 }
 
-.info h3#what {
+#info h3#what {
 	background: url(../images/what.png) top left no-repeat;
 	height: 45px;
 	margin-bottom: 15px;
@@ -167,7 +168,7 @@ header h2 {
 	text-indent: -9999px;
 }
 
-.info h3#when {
+#info h3#when {
 	background: url(../images/when.png) top left no-repeat;
 	height: 45px;
 	margin-bottom: 15px;
@@ -175,7 +176,7 @@ header h2 {
 	width: 84px;
 }
 
-.info h3#where {
+#info h3#where {
 	background: url(../images/where.png) top left no-repeat;
 	height: 45px;
 	margin-bottom: 15px;
@@ -183,7 +184,7 @@ header h2 {
 	width: 101px;
 }
 
-.info p {
+#info p {
 	font-size: 17px;
 	font-style: italic;
 }
@@ -200,20 +201,20 @@ header h2 {
 	vertical-align: top;
 }
 
-/* ----------- About ----------- */
+/* about */
 
-.about {
+#about {
 	margin: 60px auto 0;
 /* 	min-height: 300px; */
 	width: 820px;
 }
 
-.about .content {
+#about .content {
 	float: left;
 	width: 480px;
 }
 
-.about h4 {
+#about h4 {
 	background: url('../images/about.png') top left no-repeat;
 	height: 61px;
 	margin-bottom: 15px;
@@ -221,7 +222,7 @@ header h2 {
 	width: 264px;
 }
 
-.map {
+#about .map {
 	float: right;
 	margin-left: 15px;
 }

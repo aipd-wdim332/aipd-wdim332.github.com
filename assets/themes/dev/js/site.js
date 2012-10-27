@@ -51,13 +51,13 @@ Dependencies:
   // site initializer
   site.init = function(){
     // call cache function
-    site.cacheStaticElements();
+    // site.cacheStaticElements();
 
     // get fancy
-    $nav.find('li:nth-child(even)').css('background-color','rgba(0,0,0,.1)');
+    // $nav.find('li:nth-child(even)').css('background-color','rgba(0,0,0,.1)');
 
     // see helpers.js for log usage
-    log('site.js loaded');
+    // log('site.js loaded');
   };
 
   // initialize site JS when document is ready
