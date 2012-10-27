@@ -8,7 +8,12 @@
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
 
-  <meta name="author" content="AIPD WDIM332">
+  <meta property="og:title" content="An Open Discussion on Managing Interactive Teams" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.pdxinteractive.com" />
+  <meta property="og:image" content="http://pdxinteractive.com/assets/themes/dev/images/pdx_interactive_logo_trans.png" />
+  <meta property="og:site_name" content="PDX Interactive" />
+  <meta property="fb:admins" content="616418667" />
 
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,22 +32,28 @@
 </head>
 <body>
 <div id="fb-root"></div>
-<!-- <div id="container"> -->
 
   {{ content }}
-  
-<!-- </div> --> <!--/.container-->
 
 {% include themes/dev/partials/_footer.html %}
 {% include themes/dev/partials/_scripts.html %}
-<script>(function(d, s, id) {
+
+<script>
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=166005086871102";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+}(document, 'script', 'facebook-jssdk'));
+(function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+    js.src="https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+})(document,"script","twitter-wjs");
+</script>
 
 
 </body>

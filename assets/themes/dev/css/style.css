@@ -1,56 +1,39 @@
+/* reset */
+
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, del, dfn, em, font, img, ins, kbd, q, s, samp, acronym, address, big, cite, code,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;}caption, th, td {text-align:left;font-weight:normal;}table {border-collapse:separate;border-spacing:0;}blockquote:before,blockquote:after,q:before,q:after {content: "";}blockquote, q {quotes: "" "";}
 
-/* first for IE 4–8 */
-@font-face {
-	font-family: TisaWebPro;
-	src: url("../fonts/TisaWebPro.eot");
-}
+/* fonts */
 
 @font-face {
-	font-family: TisaScWebPro;
-	src: url("..fonts/TisaScWebPro.eot");
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-	font-family: TisaWebPro;
-	src: url("../fonts/TisaWebPro.woff") format("woff");
+	font-family: 'TisaWebPro';
+	src: url('../fonts/TisaWebPro.eot');
+	src: url('../fonts/TisaWebPro.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/TisaWebPro.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: TisaScWebPro;
-	src: url("../fonts/TisaScWebPro.woff") format("woff");
+	font-family: 'TisaScWebPro';
+	src: url('../fonts/TisaScWebPro.eot');
+	src: url('../fonts/TisaScWebPro.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/TisaScWebPro.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-/* ---------- Removes focus outline in web-kit browsers ---------- */
-*:focus { outline: 0; }
+/* helpers */
 
-input::-webkit-input-placeholder { color: #fff; }
-
-/* ---------- Globals ----------- */
-
-a {
-  color: #fff;
-  text-decoration: none;
+.cf:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+*:focus { outline: 0 }
+input::-webkit-input-placeholder { color: #fff }
 
-h1 {
-	width: 320px;
-	height: 191px;
-	background: url(../images/pdx_interactive_logo_trans.png) top left no-repeat;
-	margin: 0 auto 15px;
-	text-indent: -9999px;
-}
-
-h2 {
-	font-size: 40px;
-	line-height: 47px;
-	text-align: center;
-}
+/* typography */
 
 p { line-height: 150%; }
 
@@ -62,49 +45,59 @@ strong, b { font-weight:bold; }
 
 i, em { font-style:italic; }
 
-.clear { clear: both; }
-
-.darkRed { color: #592519; }
-
 body {
 	color: #fbfcfc;
-  font-family: 'TisaWebPro', serif;
+	font-family: 'TisaWebPro', serif;
 	font-size: 19px;
 	line-height: 24px;
 	text-shadow: 1px 1px 1px #3e3b3b;
 }
 
+a {
+	color: #fff;
+	text-decoration: none;
+}
+	a:hover { text-decoration: underline }
+
+/* global styles */
+
 #main {
-	background: url(../images/background.jpg) no-repeat center top;
-	-webkit-background-size: cover;
-		 -moz-background-size: cover;
-			 -o-background-size: cover;
-	   	    background-size: cover;
+	background: #000 url(../images/background.jpg) no-repeat center top;
+	background-size: cover;
 	min-width: 1020px;
 	padding: 110px 0 50px 0;
 }
 
-/* ---------- Content Container ---------- */
-#main .content,
-#panelists .content {
+.wrap {
 	margin: 0 auto;
 	width: 1020px;
 }
 
+/* header */
+
+header h1.logo {
+	width: 320px;
+	height: 191px;
+	background: url(../images/pdx_interactive_logo_trans.png) top left no-repeat;
+	margin: 0 auto 15px;
+	text-indent: -9999px;
+}
+
+header h2 {
+	font-size: 40px;
+	line-height: 47px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 680px;
+}
+
 /* ---------- RSVP Form ---------- */
+
 .rsvp-form {
 	height: 65px;
 	margin: 40px auto 0;
 	width: 345px;
-}
-
-.social a:hover { opacity: 0.75; }
-
-.rsvp-form .social {
-	height: 32px;
-	width: 68px;
-	padding-top: 4px;
-	position: absolute;
 }
 
 .rsvp-form form { display: inline-block; }
@@ -126,10 +119,10 @@ body {
 }
 
 .rsvp-form input#submit {
-  background: url(../images/submit.png) no-repeat 0 0;
-  border: 0;
+	background: url(../images/submit.png) no-repeat 0 0;
+	border: 0;
 	display: inline-block;
-  height: 36px;
+	height: 36px;
 	text-indent: -9999px;
 	width: 38px;
 }
@@ -144,103 +137,115 @@ body {
 }
 
 /* ----------- Where, When & Who ---------- */
-#www {
+
+.info {
 	border: 1px solid #D3A795;
 	border-bottom: 0;
-	margin: 50px auto 0;
+	margin: 30px auto 0;
 /* 	min-height: 157px; */
 	width: 820px;
 }
 
-#www .outside {
-  float: left;
-	height: 117px;
+.info .box {
+	float: left;
+	height: 130px;
 	padding: 20px;
-  width: 239px;
+	width: 239px;
 }
 
-#www #middle {
+.info .box.middle {
 	border-left: 1px solid #D3A795;
 	border-right: 1px solid #D3A795;
-  float: left;
-	height: 117px;
-	padding: 20px;
-  width: 220px;
+	width: 220px;
 }
 
-#www h3#where {
-  background: url(../images/where.png) top left no-repeat;
-	height: 45px;
-  margin-bottom: 15px;
-	text-indent: -9999px;
-  width: 101px;
-}
-
-#www h3#when {
-	background: url(../images/when.png) top left no-repeat;
-	height: 45px;
-	margin-bottom: 15px;
-  text-indent: -9999px;
-  width: 84px;
-}
-
-#www h3#who {
+.info h3#what {
 	background: url(../images/what.png) top left no-repeat;
 	height: 45px;
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 	width: 84px;
 	text-indent: -9999px;
 }
 
-#www article {
+.info h3#when {
+	background: url(../images/when.png) top left no-repeat;
+	height: 45px;
+	margin-bottom: 15px;
+	text-indent: -9999px;
+	width: 84px;
+}
+
+.info h3#where {
+	background: url(../images/where.png) top left no-repeat;
+	height: 45px;
+	margin-bottom: 15px;
+	text-indent: -9999px;
+	width: 101px;
+}
+
+.info p {
 	font-size: 17px;
 	font-style: italic;
 }
 
+/* social buttons */
+
+.social {
+	margin: 30px auto 0;
+	text-align: center;
+}
+
+.social iframe, .social div {
+	display: inline-block;
+	vertical-align: top;
+}
+
 /* ----------- About ----------- */
-#about {
+
+.about {
 	margin: 60px auto 0;
 /* 	min-height: 300px; */
 	width: 820px;
 }
 
-#about h4 {
+.about .content {
+	float: left;
+	width: 480px;
+}
+
+.about h4 {
 	background: url('../images/about.png') top left no-repeat;
-  height: 61px;
-  margin-bottom: 15px;
-  text-indent: -9999px;
+	height: 61px;
+	margin-bottom: 15px;
+	text-indent: -9999px;
 	width: 264px;
 }
 
-#map {
+.map {
 	float: right;
 	margin-left: 15px;
 }
 
 /* ---------- Shadow ----------*/
+
 .shadow {
-  background: url(../images/shadow.png) 0 0 repeat-x;
-  height: 21px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+	background: url(../images/shadow.png) 0 0 repeat-x;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 /* ---------- Panelists Profiles ----------- */
+
 #panelists {
-	background: url('../images/footer_pannel.jpg') 0 0;
-/*
-	-webkit-background-size: cover;
-		 -moz-background-size: cover;
-			 -o-background-size: cover;
-	   	    background-size: cover;
-*/
+	background: url('../images/footer_panel.jpg') 0 0;
 	margin: 0 auto;
 	text-shadow: none !important;
 }
 
 #panelists h4 {
-	background: url("../images/panelists.png") no-repeat scroll left top transparent;
+	background: url("../images/panelists.png") no-repeat scroll left top;
 	height: 62px;
 	margin-left: 100px;
 	margin-top: 45px;
@@ -293,33 +298,18 @@ body {
 }
 
 /* ------------ Footer ----------- */
+
 footer {
-  background: #000;
-  clear: both;
-  padding: 24px 0;
-  text-align: center;
-  width: 100%;
+	background: #000;
+	clear: both;
+	padding: 24px 0;
+	text-align: center;
+	width: 100%;
 }
 
 footer p {
-  font-size: 12px;
-  line-height: 100%;
-  margin: 0;
-  padding: 10px 0;
-}
-
-/**** social buttons ****/
-#socialButtons {
-  margin-top: 25px;
-  margin-left: 370px;
-}
-
-#socialButtons:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#socialButtons iframe, #socialButtons div {
-  float: left;
+	font-size: 12px;
+	line-height: 100%;
+	margin: 0;
+	padding: 10px 0;
 }
