@@ -198,6 +198,7 @@ header h2 {
 
 .social iframe, .social div {
 	display: inline-block;
+	line-height: 1;
 	vertical-align: top;
 }
 
