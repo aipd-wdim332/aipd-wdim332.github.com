@@ -1,0 +1,11 @@
+<section id="panelists">
+  <div class="shadow">&nbsp;</div>
+  <div class="content">
+    <img src="{{ ASSET_PATH }}dev/images/shadow.png" height="21" width="1020" alt="" />
+    <h4>PANELISTS</h4>
+    {% for post in site.categories.profile %}
+      {{ post.content }}
+    {% endfor %}
+    <br class="clear">
+  </div>
+</section>
