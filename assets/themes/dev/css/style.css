@@ -94,6 +94,14 @@ header h2 {
 }
 
 /* ---------- RSVP Form ---------- */
+p.success,
+p.pending {
+  display: none;
+  font-size: 28px;
+  margin: 20px auto 0;
+  text-align: center;
+  text-shadow: 0 5px 5px #212121;
+}
 
 .rsvp-form {
 	height: 65px;
@@ -101,9 +109,9 @@ header h2 {
 	width: 345px;
 }
 
-.rsvp-form form { display: inline-block; }
+form { display: inline-block; }
 
-.rsvp-form input#email {
+form input#mce-EMAIL {
 	background: url("../images/input.png") no-repeat scroll left top transparent;
 	border: medium none;
 	color: #fff;
@@ -119,7 +127,7 @@ header h2 {
 	width: 212px;
 }
 
-.rsvp-form input#submit {
+form input#submit {
 	background: url(../images/submit.png) no-repeat 0 0;
 	border: 0;
 	display: inline-block;
@@ -198,7 +206,7 @@ header h2 {
 
 .social iframe, .social div {
 	display: inline-block;
-	line-height: 1;
+	line-height: 0;
 	vertical-align: top;
 }
 
