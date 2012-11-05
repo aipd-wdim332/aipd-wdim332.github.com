@@ -21,9 +21,7 @@ Contributors:
   Jake Love
 
 Dependencies:
-  jQuery        /js/libs/jquery.min.js
-  Underscore    /js/libs/underscore.min.js
-  Helpers       /js/helpers.js
+  jQuery 1.8.2
 
 */
 

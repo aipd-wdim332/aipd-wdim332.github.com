@@ -20,8 +20,8 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link href="{{ ASSET_PATH }}/css/normalize.css" rel="stylesheet" type="text/css" media="all">
-  <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet" type="text/css" media="all">
+  <link href="{{ ASSET_PATH }}/css/normalize.css?body=1" rel="stylesheet" type="text/css" media="all">
+  <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
   <script src="{{ ASSET_PATH }}/js/libs/prefixfree.min.js"></script>
 
   <!-- fav and touch icons
@@ -36,36 +36,39 @@
 {{ content }}
 
 {% include themes/dev/partials/_footer.html %}
-{% include themes/dev/partials/_scripts.html %}
 
 <script type="text/javascript">
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=166005086871102";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-(function(d,s,id){
-  var js,fjs=d.getElementsByTagName(s)[0];
-  if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-    js.src="https://platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js,fjs);
-  }
-})(document,"script","twitter-wjs");
-</script>
-<script type="text/javascript">
+  // Facebook
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=166005086871102";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Twitter
+  (function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+      js.src="https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  })(document,"script","twitter-wjs");
+
   // Google Analytics
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-36043335-1']);
   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+  (function(d,s,a) {
+    var ga = d.createElement(s); ga.type = 'text/java'+s; ga.async = true;
+    ga.src = ('https:' == d.location.protocol ? 'https://ssl' : 'http://www')+a;
+    var fjs = d.getElementsByTagName(s)[0]; fjs.parentNode.insertBefore(ga,fjs);
+  })(document,'script','.google-analytics.com/ga.js');
 </script>
+
+{% include themes/dev/partials/_scripts.html %}
+
 </body>
 </html>
