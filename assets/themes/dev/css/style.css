@@ -32,7 +32,10 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 }
 
 *:focus { outline: 0 }
-input::-webkit-input-placeholder { color: #fff }
+input::-webkit-input-placeholder {
+	color: #fff;
+	text-shadow: none;
+}
 
 /* typography */
 
@@ -66,7 +69,7 @@ a {
 	background: #000 url(../images/background.jpg) no-repeat center top;
 	background-size: cover;
 	min-width: 1020px;
-	padding: 110px 0 50px 0;
+	padding: 100px 0 50px 0;
 }
 
 .wrap {
@@ -104,25 +107,24 @@ p.pending {
 }
 
 .rsvp-form {
-	height: 65px;
-	margin: 40px auto 0;
-	width: 345px;
+	height: 60px;
+	margin: 30px auto 0;
+	text-align: center;
 }
 
 form { display: inline-block; }
 
 form input#mce-EMAIL {
 	background: url("../images/input.png") no-repeat scroll left top transparent;
-	border: medium none;
+	border: none;
 	color: #fff;
 	display: inline-block;
 	float: left;
-	font-size: 18px;
+	font-size: 16px;
 	height: 36px;
 	line-height: 36px;
-	margin-left: 45px;
-	margin-right: 1px;
-	text-indent: 13px;
+	margin-left: 0;
+	text-indent: 10px;
 	text-shadow: 1px 1px 1px #3e3b3b;
 	width: 212px;
 }
@@ -136,8 +138,14 @@ form input#submit {
 	width: 38px;
 }
 
+form input#submit:hover,
+form input#submit:active {
+	background-color: rgba(255, 150, 100, .2);
+}
+
 .rsvp-form .tip {
-	clear: both;
+	color: #652D1F;
+	display: block;
 	font-size: 15px;
 	font-style: italic;
 	padding: 0;
