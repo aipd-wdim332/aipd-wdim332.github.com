@@ -35,30 +35,41 @@ Dependencies:
   var site = {};
 
   // declare any shared variables here
-  var example = '';
+  // var example = '';
 
   // static DOM references
-  var $header, $nav, $container, $footer;
+  var $rsvp;
 
   // example DOM caching function
   site.cacheStaticElements = function(){
-    $header    = $('header');
-    $nav       = $header.find('nav');
-    $container = $('.container');
-    $footer    = $('footer');
+    $rsvp = $('.rsvp-form');
   };
 
   // site initializer
   site.init = function(){
     // call cache function
-    // site.cacheStaticElements();
+    site.cacheStaticElements();
 
-    // get fancy
-    // $nav.find('li:nth-child(even)').css('background-color','rgba(0,0,0,.1)');
-
-    // see helpers.js for log usage
-    // log('site.js loaded');
+    if (getParameterByName('rsvp') == 'success') {
+      $rsvp.find('#mc_embed_signup').hide().end()
+        .find('.success').show();
+    }
+    else if (getParameterByName('rsvp') == 'pending') {
+      $rsvp.find('#mc_embed_signup').hide().end()
+        .find('.pending').show();
+    };
   };
+
+  // private functions
+
+  function getParameterByName(name){
+    var name    = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]")
+      , regex   = new RegExp("[\\?&]" + name + "=([^&#]*)")
+      , results = regex.exec(window.location.search);
+
+    if (results == null) return false;
+    else return decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
 
   // initialize site JS when document is ready
   $(site.init);
