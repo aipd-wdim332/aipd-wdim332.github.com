@@ -225,12 +225,33 @@ form input#submit:active {
 
 #about {
 	margin: 60px auto 0;
-/* 	min-height: 300px; */
 	width: 820px;
 }
 
 #about .content {
-	text-align: center;
+	text-align: left;
+}
+
+#about .content { font-size: 16px }
+
+#about .content p {
+	font-size: 16px;
+}
+
+#about .content p.first {
+	font-size: 20px;
+}
+
+#about .content p strong {
+	display: inline-block;
+	font-size: 28px;
+	font-weight: normal;
+	padding: 12px 0 18px;
+}
+
+#about .content p.keywords {
+	font-size: 16px;
+	font-style: italic;
 }
 
 #about h4 {
@@ -262,7 +283,7 @@ form input#submit:active {
 	background: #111 url(../images/panBack.jpg) repeat;
 	font-size: 16px;
 	min-width: 1020px;
-	padding: 56px 0 50px 0;
+	padding: 56px 0 0;
 }
 
 #panelists .panelist {
@@ -292,6 +313,7 @@ form input#submit:active {
 	margin: 0 0 30px 100px;
 	text-indent: -9999px;
 	width: 282px;
+	overflow: hidden;
 }
 
 #panelists h5 {
@@ -331,6 +353,32 @@ form input#submit:active {
 #panelists .coming-soon p {
 	text-align: center;
 	font-size: 22px;
+}
+
+/* resources */
+
+#resources {
+	background: #111 url(../images/panBack.jpg) repeat;
+	font-size: 16px;
+	min-width: 1020px;
+	padding: 0 0 50px;
+}
+
+#resources h4 {
+	background: url("../images/resources.png") no-repeat scroll left top;
+	height: 62px;
+	margin: 0 0 30px 100px;
+	text-indent: -9999px;
+	width: 282px;
+	overflow: hidden;
+}
+
+#resources ul {
+	margin-left: 100px;
+}
+#resources ul li {
+	font-size: 22px;
+	line-height: 2;
 }
 
 /* ------------ Youtube ----------- */
