@@ -355,6 +355,19 @@ form input#submit:active {
 	font-size: 22px;
 }
 
+#panelists .panel_quote {
+	clear: both;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px 0 40px 0;
+}
+
+#panelists .panel_quote blockquote {
+	font-style: italic;
+	padding: 20px 0;
+	line-height: 1.6em;
+}
+
 /* resources */
 
 #resources {
