@@ -333,6 +333,14 @@ form input#submit:active {
 	font-size: 22px;
 }
 
+/* ------------ Youtube ----------- */
+.youtube iframe{
+	width: 853px;
+	margin: 0 auto;
+	margin-top: 45px;
+	display: block;
+}
+
 /* ------------ Footer ----------- */
 
 footer {
