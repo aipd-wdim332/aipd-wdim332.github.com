@@ -230,8 +230,7 @@ form input#submit:active {
 }
 
 #about .content {
-	float: left;
-	width: 480px;
+	text-align: center;
 }
 
 #about h4 {
