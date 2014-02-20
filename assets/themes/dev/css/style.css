@@ -87,6 +87,16 @@ header #logo {
 	width: 320px;
 }
 
+header h1 {
+	font-size: 46px;
+	line-height: 47px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 680px;
+	margin-top:50px;
+}
+
 header h2 {
 	font-size: 40px;
 	line-height: 47px;
@@ -94,6 +104,17 @@ header h2 {
 	text-align: center;
 	text-transform: uppercase;
 	width: 680px;
+	margin-top:50px;
+}
+
+header h3 {
+	font-size: 20px;
+	line-height: 47px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 680px;
+	margin-top:50px;
 }
 
 /* ---------- RSVP Form ---------- */
@@ -375,6 +396,15 @@ form input#submit:active {
 	font-size: 16px;
 	min-width: 1020px;
 	padding: 0 0 50px;
+}
+
+#resources h2 {
+	font-size: 30px;
+	line-height: 47px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	width: 680px;
 }
 
 #resources h4 {
